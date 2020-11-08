@@ -1,0 +1,30 @@
+        <!-- x1: 0; x2: 0, y1: 0, y2: 0 -->
+        <g>
+            <!-- polyline -->
+            <polyline onclick="console.log(this)"
+                points="">
+            </polyline>
+            <!-- polyline end-->
+
+            <!-- text -->
+            <g>
+                <!-- left side -->
+                <text text-anchor="middle" onclick="alert(this.innerHTML)" transform="translate(0,0) rotate(-70)">225</text>
+             
+                
+                <!-- right side -->
+                <text text-anchor="middle" onclick="alert(this.innerHTML)" transform="translate(0,0) rotate(-70)">224</text>
+        
+            </g>
+            <!-- text end -->
+            <!-- line -->
+            <g>
+                <!-- vertical line -->
+                <line x1="0" x2="0" y1="0" y2="0"> </line>
+                <!-- vertical line end -->
+
+                <line x1="0" x2="0" y1="0" y2="0"> </line>
+              
+            </g>
+            <!-- line end -->
+        </g>

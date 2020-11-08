@@ -1,0 +1,69 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --stroke-width: .5px;
+  --line-color: #3CF5F2;
+  --polyline-color: #EB4CEF;
+  --shadow-color: rgba(0, 0, 255, 0.03);
+  --blue_stroke: #00f;
+  --fill_text: #f00;
+  --black: #000000;
+}
+
+svg {
+  width: 900px;
+  height: 900px;
+  margin: auto;
+  border: solid black 1px;
+  display: block;
+}
+
+.shadow_blue {
+  stroke: var(--shadow-color);
+}
+
+polyline {
+  fill: transparent;
+  stroke-width: .5px;
+  stroke: var(--polyline-color);
+}
+
+polyline.polyline_highlight {
+  fill: #F4F6B2;
+}
+
+polyline[class*="land"] {
+  fill: #F4F6B2;
+  stroke-width: 0;
+}
+
+text {
+  font-size: 3px;
+  cursor: pointer;
+}
+
+line {
+  stroke: var(--line-color);
+  stroke-width: var(--stroke-width);
+}
+
+#blue_stroke {
+  stroke: var(--blue_stroke);
+}
+
+.fill_text {
+  fill: var(--fill_text);
+}
+
+.section_plot_1_road line {
+  stroke: var(--black);
+}
+/*# sourceMappingURL=style.css.map */
