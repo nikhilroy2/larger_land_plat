@@ -278,4 +278,41 @@ body {
   position: absolute;
   left: 0;
 }
+
+.larger_land_container .section_part8 {
+  position: absolute;
+  width: 24%;
+  height: 28%;
+  top: 28%;
+  left: 21%;
+  pointer-events: none;
+}
+
+.larger_land_container .section_part8 [class*=group] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.larger_land_container .section_part8 [class*=group] span.land {
+  display: inline-block;
+  background: rgba(255, 0, 0, 0.2);
+  cursor: pointer;
+  position: absolute;
+  pointer-events: visible;
+}
+
+.larger_land_container .section_part8 [class*=group] span.land.land_relative {
+  position: relative;
+}
+
+.larger_land_container .section_part8 [class*=group] span.land.no_bg {
+  background: transparent;
+}
+
+.larger_land_container .section_part8 [class*=group] .children_span {
+  position: absolute;
+  left: 0;
+}
 /*# sourceMappingURL=style.css.map */
