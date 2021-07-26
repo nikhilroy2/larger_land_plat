@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+// ...................... Mixin ...................
+// ..... group mixin
+@mixin groupView{
+    [class*=group]{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        span.land{
+            display: inline-block;
+            cursor: pointer;
+            position: absolute;
+            pointer-events: visible;
+            &.land_relative{
+                position: relative;
+            }
+            &.no_bg{
+            }
+        }
+        .children_span{
+            position: absolute;
+            left: 0;
+        }
+    }
+}
+// ...................... Mixin ................... End
+
+.larger_land_container{
+    background: url('./land3.jpg') no-repeat;
+    width: 9000px;
+    margin: auto;
+    height: 8000px;
+    position: relative;
+    transform: scale(.15);
+    transform-origin: right top;
+    .section_part1{
+        position: absolute;
+        width: 42%;
+        height: 48%;
+        left: 2%;
+        top: 3%;
+        pointer-events: none;
+        @include groupView;
+       
+    }
+    .section_part2{
+        position: absolute;
+        width: 33%;
+        height: 43%;
+        top: 41%;
+        left: 2%;
+        pointer-events: none;
+        @include groupView
+    }
+    .section_part3{
+        position: absolute;
+        width: 35%;
+        height: 43%;
+        top: 0%;
+        left: 29%;
+        pointer-events: none;
+        @include groupView;
+    }
+    .section_part4{
+        position: absolute;
+        width: 35%;
+        height: 43%;
+        top: 42%;
+        left: 32%;
+        pointer-events: none;
+        @include groupView;
+    }
+    .section_part5{
+        position: absolute;
+        width: 35%;
+        height: 43%;
+        top: 0%;
+        left: 60%;
+        pointer-events: none;
+        @include groupView;
+    }
+    .section_part6{
+        position: absolute;
+        width: 41%;
+        height: 43%;
+        top: 40%;
+        left: 54%;
+        pointer-events: none;
+        @include groupView;
+    }
+    .section_part7{
+        position: absolute;
+        width: 24%;
+        height: 28%;
+        top: 28%;
+        left: 50%;
+        pointer-events: none;
+        @include groupView;
+    }
+    .section_part8{
+        position: absolute;
+        width: 24%;
+        height: 28%;
+        top: 28%;
+        left: 21%;
+        pointer-events: none;
+        @include groupView;
+    }
+}
