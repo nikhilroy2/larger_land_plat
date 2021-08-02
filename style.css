@@ -453,15 +453,26 @@ body {
   position: absolute;
   left: 0;
 }
-.larger_land_container .plots_land_lake {
+.larger_land_container .plots_land_lake .lake_line_a {
   position: absolute;
-  width: 72%;
+  width: 68%;
   /* bottom: 100%; */
   left: 39.5%;
   /* border: 20px solid red; */
-  top: 3%;
+  top: .5%;
   transform: rotate(90deg);
   transform-origin: left bottom;
+}
+
+.larger_land_container .plots_land_lake .lake_line_b {
+  position: absolute;
+  width: 36.6%;
+  left: 39.56%;
+    top: 0.7%;
+  height: 500px;
+  /* transform: rotate(90deg); */
+  transform-origin: left bottom;
+  /* border: 25px solid red; */
 }
 
 /*# sourceMappingURL=style.css.map */
