@@ -1,96 +1,95 @@
 * {
   -webkit-box-sizing: border-box;
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
-.map_box{
-	align-items: center;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	min-width: 0;
-	word-wrap: break-word;
-	background-color: #ffffff !important;
-	background-clip: border-box;
-	border: 1px solid #EBEDF3;
-	border-radius: 0.85rem; 
-	height: 1000px;
-	justify-content: center;
-	overflow: auto;
-	cursor: grab;
-	width:100% !important;
-	-webkit-box-shadow: 0px 0px 30px 0px rgba(82, 63, 105, 0.05);
-	box-shadow: 0px 0px 30px 0px rgba(82, 63, 105, 0.05);
-	border: 0;
+.map_box {
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #ffffff !important;
+  background-clip: border-box;
+  border: 1px solid #ebedf3;
+  border-radius: 0.85rem;
+  height: 1000px;
+  justify-content: center;
+  overflow: auto;
+  cursor: grab;
+  width: 100% !important;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(82, 63, 105, 0.05);
+  box-shadow: 0px 0px 30px 0px rgba(82, 63, 105, 0.05);
+  border: 0;
 }
 
 .print {
-	background: url("./land3.jpg") no-repeat !important;
+  background: url("./land3.jpg") no-repeat !important;
 }
 
-.plot_selected{
-	background-color:rgb(2, 242, 255,0.5) !important;
+.plot_selected {
+  background-color: rgb(2, 242, 255, 0.5) !important;
 }
 
-.addClass{
-	background-color:rgb(2, 242, 255,0.5) !important;
+.addClass {
+  background-color: rgb(2, 242, 255, 0.5) !important;
 }
-.no_click, .prevented{
-	
-	 cursor: not-allowed !important;;
+.no_click,
+.prevented {
+  cursor: not-allowed !important;
   pointer-events: none !important;
-
 }
 @media only print {
-   .no_click:after {
+  .no_click:after {
     width: auto;
-     height: auto;
-     overflow: visible;
-}
+    height: auto;
+    overflow: visible;
+  }
 }
 .no_click:after {
-    position: absolute; 
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    content: "\274c"; /* use the hex value here... */
-    background-color:rgb(234, 234, 234,0.7);
-	font-size:25px;
-    color: red !important;
-    line-height: 80px;
-    text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "\274c"; /* use the hex value here... */
+  background-color: rgb(234, 234, 234, 0.7);
+  font-size: 25px;
+  color: red !important;
+  line-height: 80px;
+  text-align: center;
 }
 
 .larger_land_container {
-    top: 1500px !important;
-    left: 0px !important;
-    -webkit-transform: scale(0.17) rotate(90deg) !important;
-    transform: scale(0.17) rotate(90deg) !important;
-    -webkit-transform-origin: right top !important;
-    transform-origin: right top !important;
+  top: 1500px !important;
+  left: 0px !important;
+  -webkit-transform: scale(0.17) rotate(90deg) !important;
+  transform: scale(0.17) rotate(90deg) !important;
+  -webkit-transform-origin: right top !important;
+  transform-origin: right top !important;
 }
 
-.map_box_overview{
-	align-items: center;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	min-width: 0;
-	word-wrap: break-word;
-	background-color: #ffffff !important;
-	background-clip: border-box;
-	border: 1px solid #EBEDF3;
-	border-radius: 0.85rem; 
-	height: 1000px;
-	justify-content: center;
-	overflow: auto;
-	cursor: grab;
-	width:100% !important;
-	-webkit-box-shadow: 0px 0px 30px 0px rgba(82, 63, 105, 0.05);
-	box-shadow: 0px 0px 30px 0px rgba(82, 63, 105, 0.05);
-	border: 0;
+.map_box_overview {
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #ffffff !important;
+  background-clip: border-box;
+  border: 1px solid #ebedf3;
+  border-radius: 0.85rem;
+  height: 1000px;
+  justify-content: center;
+  overflow: auto;
+  cursor: grab;
+  width: 100% !important;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(82, 63, 105, 0.05);
+  box-shadow: 0px 0px 30px 0px rgba(82, 63, 105, 0.05);
+  border: 0;
 }
 .larger_land_container_overview {
   background: url("./land3.jpg") no-repeat;
@@ -99,18 +98,15 @@
   height: 8000px;
   position: relative;
   -webkit-transform: scale(0.15);
-          transform: scale(0.15);
+  transform: scale(0.15);
   -webkit-transform-origin: right top;
-          transform-origin: right top;
+  transform-origin: right top;
 }
-
-
 
 .wrapper {
   position: relative;
   width: 100%;
   height: 100%;
-  
 }
 
 #map {
@@ -121,13 +117,13 @@
 }
 
 .holder {
- position: absolute;
-    padding: 50px;
-    top: -638px;
-    transform: rotate(-20deg) !important;
-    right: -166px;
-    width: 300px;
-	z-index;999
+  position: absolute;
+  padding: 50px;
+  top: -638px;
+  transform: rotate(-20deg) !important;
+  right: -166px;
+  width: 300px;
+  z-index: 999;
 }
 body {
   margin: 0;
@@ -140,11 +136,11 @@ body {
   height: 8000px;
   position: relative;
   -webkit-transform: scale(0.15);
-          transform: scale(0.15);
+  transform: scale(0.15);
   -webkit-transform-origin: right top;
-          transform-origin: right top;
-		  
-	z-index:9999;
+  transform-origin: right top;
+
+  z-index: 9999;
 }
 .larger_land_container {
   background: url("./land3.jpg") no-repeat;
@@ -153,12 +149,12 @@ body {
   height: 8000px;
   position: relative;
   -webkit-transform: scale(0.15);
-          transform: scale(0.15);
+  transform: scale(0.15);
   -webkit-transform-origin: right top;
-          transform-origin: right top;
+  transform-origin: right top;
 }
 
-.print  {
+.print {
   background: url("./land3.jpg") no-repeat !important;
 }
 
@@ -171,14 +167,14 @@ body {
   pointer-events: none;
 }
 
-.larger_land_container .section_part1 [class*=group] {
+.larger_land_container .section_part1 [class*="group"] {
   position: absolute;
   width: 100%;
   height: 100%;
   pointer-events: none;
 }
 
-.larger_land_container .section_part1 [class*=group] span.land {
+.larger_land_container .section_part1 [class*="group"] span.land {
   display: inline-block;
   background: rgba(255, 0, 0, 0.2);
   cursor: pointer;
@@ -186,15 +182,15 @@ body {
   pointer-events: visible;
 }
 
-.larger_land_container .section_part1 [class*=group] span.land.land_relative {
+.larger_land_container .section_part1 [class*="group"] span.land.land_relative {
   position: relative;
 }
 
-.larger_land_container .section_part1 [class*=group] span.land.no_bg {
+.larger_land_container .section_part1 [class*="group"] span.land.no_bg {
   background: transparent;
 }
 
-.larger_land_container .section_part1 [class*=group] .children_span {
+.larger_land_container .section_part1 [class*="group"] .children_span {
   position: absolute;
   left: 0;
 }
@@ -208,14 +204,14 @@ body {
   pointer-events: none;
 }
 
-.larger_land_container .section_part2 [class*=group] {
+.larger_land_container .section_part2 [class*="group"] {
   position: absolute;
   width: 100%;
   height: 100%;
   pointer-events: none;
 }
 
-.larger_land_container .section_part2 [class*=group] span.land {
+.larger_land_container .section_part2 [class*="group"] span.land {
   display: inline-block;
   background: rgba(255, 0, 0, 0.2);
   cursor: pointer;
@@ -223,15 +219,15 @@ body {
   pointer-events: visible;
 }
 
-.larger_land_container .section_part2 [class*=group] span.land.land_relative {
+.larger_land_container .section_part2 [class*="group"] span.land.land_relative {
   position: relative;
 }
 
-.larger_land_container .section_part2 [class*=group] span.land.no_bg {
+.larger_land_container .section_part2 [class*="group"] span.land.no_bg {
   background: transparent;
 }
 
-.larger_land_container .section_part2 [class*=group] .children_span {
+.larger_land_container .section_part2 [class*="group"] .children_span {
   position: absolute;
   left: 0;
 }
@@ -245,14 +241,14 @@ body {
   pointer-events: none;
 }
 
-.larger_land_container .section_part3 [class*=group] {
+.larger_land_container .section_part3 [class*="group"] {
   position: absolute;
   width: 100%;
   height: 100%;
   pointer-events: none;
 }
 
-.larger_land_container .section_part3 [class*=group] span.land {
+.larger_land_container .section_part3 [class*="group"] span.land {
   display: inline-block;
   background: rgba(255, 0, 0, 0.2);
   cursor: pointer;
@@ -260,15 +256,15 @@ body {
   pointer-events: visible;
 }
 
-.larger_land_container .section_part3 [class*=group] span.land.land_relative {
+.larger_land_container .section_part3 [class*="group"] span.land.land_relative {
   position: relative;
 }
 
-.larger_land_container .section_part3 [class*=group] span.land.no_bg {
+.larger_land_container .section_part3 [class*="group"] span.land.no_bg {
   background: transparent;
 }
 
-.larger_land_container .section_part3 [class*=group] .children_span {
+.larger_land_container .section_part3 [class*="group"] .children_span {
   position: absolute;
   left: 0;
 }
@@ -282,14 +278,14 @@ body {
   pointer-events: none;
 }
 
-.larger_land_container .section_part4 [class*=group] {
+.larger_land_container .section_part4 [class*="group"] {
   position: absolute;
   width: 100%;
   height: 100%;
   pointer-events: none;
 }
 
-.larger_land_container .section_part4 [class*=group] span.land {
+.larger_land_container .section_part4 [class*="group"] span.land {
   display: inline-block;
   background: rgba(255, 0, 0, 0.2);
   cursor: pointer;
@@ -297,15 +293,15 @@ body {
   pointer-events: visible;
 }
 
-.larger_land_container .section_part4 [class*=group] span.land.land_relative {
+.larger_land_container .section_part4 [class*="group"] span.land.land_relative {
   position: relative;
 }
 
-.larger_land_container .section_part4 [class*=group] span.land.no_bg {
+.larger_land_container .section_part4 [class*="group"] span.land.no_bg {
   background: transparent;
 }
 
-.larger_land_container .section_part4 [class*=group] .children_span {
+.larger_land_container .section_part4 [class*="group"] .children_span {
   position: absolute;
   left: 0;
 }
@@ -319,14 +315,14 @@ body {
   pointer-events: none;
 }
 
-.larger_land_container .section_part5 [class*=group] {
+.larger_land_container .section_part5 [class*="group"] {
   position: absolute;
   width: 100%;
   height: 100%;
   pointer-events: none;
 }
 
-.larger_land_container .section_part5 [class*=group] span.land {
+.larger_land_container .section_part5 [class*="group"] span.land {
   display: inline-block;
   background: rgba(255, 0, 0, 0.2);
   cursor: pointer;
@@ -334,15 +330,15 @@ body {
   pointer-events: visible;
 }
 
-.larger_land_container .section_part5 [class*=group] span.land.land_relative {
+.larger_land_container .section_part5 [class*="group"] span.land.land_relative {
   position: relative;
 }
 
-.larger_land_container .section_part5 [class*=group] span.land.no_bg {
+.larger_land_container .section_part5 [class*="group"] span.land.no_bg {
   background: transparent;
 }
 
-.larger_land_container .section_part5 [class*=group] .children_span {
+.larger_land_container .section_part5 [class*="group"] .children_span {
   position: absolute;
   left: 0;
 }
@@ -356,14 +352,14 @@ body {
   pointer-events: none;
 }
 
-.larger_land_container .section_part6 [class*=group] {
+.larger_land_container .section_part6 [class*="group"] {
   position: absolute;
   width: 100%;
   height: 100%;
   pointer-events: none;
 }
 
-.larger_land_container .section_part6 [class*=group] span.land {
+.larger_land_container .section_part6 [class*="group"] span.land {
   display: inline-block;
   background: rgba(255, 0, 0, 0.2);
   cursor: pointer;
@@ -371,15 +367,15 @@ body {
   pointer-events: visible;
 }
 
-.larger_land_container .section_part6 [class*=group] span.land.land_relative {
+.larger_land_container .section_part6 [class*="group"] span.land.land_relative {
   position: relative;
 }
 
-.larger_land_container .section_part6 [class*=group] span.land.no_bg {
+.larger_land_container .section_part6 [class*="group"] span.land.no_bg {
   background: transparent;
 }
 
-.larger_land_container .section_part6 [class*=group] .children_span {
+.larger_land_container .section_part6 [class*="group"] .children_span {
   position: absolute;
   left: 0;
 }
@@ -393,14 +389,14 @@ body {
   pointer-events: none;
 }
 
-.larger_land_container .section_part7 [class*=group] {
+.larger_land_container .section_part7 [class*="group"] {
   position: absolute;
   width: 100%;
   height: 100%;
   pointer-events: none;
 }
 
-.larger_land_container .section_part7 [class*=group] span.land {
+.larger_land_container .section_part7 [class*="group"] span.land {
   display: inline-block;
   background: rgba(255, 0, 0, 0.2);
   cursor: pointer;
@@ -408,15 +404,15 @@ body {
   pointer-events: visible;
 }
 
-.larger_land_container .section_part7 [class*=group] span.land.land_relative {
+.larger_land_container .section_part7 [class*="group"] span.land.land_relative {
   position: relative;
 }
 
-.larger_land_container .section_part7 [class*=group] span.land.no_bg {
+.larger_land_container .section_part7 [class*="group"] span.land.no_bg {
   background: transparent;
 }
 
-.larger_land_container .section_part7 [class*=group] .children_span {
+.larger_land_container .section_part7 [class*="group"] .children_span {
   position: absolute;
   left: 0;
 }
@@ -430,14 +426,14 @@ body {
   pointer-events: none;
 }
 
-.larger_land_container .section_part8 [class*=group] {
+.larger_land_container .section_part8 [class*="group"] {
   position: absolute;
   width: 100%;
   height: 100%;
   pointer-events: none;
 }
 
-.larger_land_container .section_part8 [class*=group] span.land {
+.larger_land_container .section_part8 [class*="group"] span.land {
   display: inline-block;
   background: rgba(255, 0, 0, 0.2);
   cursor: pointer;
@@ -445,16 +441,27 @@ body {
   pointer-events: visible;
 }
 
-.larger_land_container .section_part8 [class*=group] span.land.land_relative {
+.larger_land_container .section_part8 [class*="group"] span.land.land_relative {
   position: relative;
 }
 
-.larger_land_container .section_part8 [class*=group] span.land.no_bg {
+.larger_land_container .section_part8 [class*="group"] span.land.no_bg {
   background: transparent;
 }
 
-.larger_land_container .section_part8 [class*=group] .children_span {
+.larger_land_container .section_part8 [class*="group"] .children_span {
   position: absolute;
   left: 0;
 }
+.larger_land_container .plots_land_lake {
+  position: absolute;
+  width: 72%;
+  /* bottom: 100%; */
+  left: 39.5%;
+  /* border: 20px solid red; */
+  top: 3%;
+  transform: rotate(90deg);
+  transform-origin: left bottom;
+}
+
 /*# sourceMappingURL=style.css.map */
