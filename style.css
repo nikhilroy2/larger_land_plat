@@ -67,7 +67,7 @@
   -webkit-transform: scale(0.17) rotate(90deg) !important;
   transform: scale(0.17) rotate(90deg) !important;
   -webkit-transform-origin: right top !important;
-  transform-origin: right top !important;
+  transform-origin: right top !important; 
 }
 
 .map_box_overview {
@@ -452,6 +452,16 @@ body {
 .larger_land_container .section_part8 [class*="group"] .children_span {
   position: absolute;
   left: 0;
+}
+.larger_land_container .plots_land_lake{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* border: 25px solid red; */
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  user-select: none;
 }
 .larger_land_container .plots_land_lake .lake_line_a {
   position: absolute;
